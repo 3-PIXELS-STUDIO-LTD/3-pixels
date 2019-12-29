@@ -4,7 +4,8 @@
   "description": "3-pixels.com website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "webpack --config webpack.config.js --mode production",
+    "dev": "webpack-dev-server --open --mode development"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/3-PIXELS-STUDIO-LTD/3-pixels/issues"
   },
-  "homepage": "https://github.com/3-PIXELS-STUDIO-LTD/3-pixels#readme"
+  "homepage": "https://github.com/3-PIXELS-STUDIO-LTD/3-pixels#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.0",
+    "cssnano": "^4.1.10",
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.24.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
 }
