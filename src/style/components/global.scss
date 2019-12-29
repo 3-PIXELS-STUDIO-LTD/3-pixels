@@ -1,0 +1,35 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  background-color: $color-black;
+  color: $color-platinum;
+  font-size: 5vw;
+  letter-spacing: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pixels-root {
+  height: 100vh;
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+}
+
+.pixels-root::-webkit-scrollbar {
+  display: none;
+}
+
+.pixels-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
