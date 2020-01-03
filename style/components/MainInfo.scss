@@ -8,4 +8,21 @@
   text-align: center;
   background-color: $color-black;
   color: $color-platinum;
+
+  &__name {
+    margin: 0;
+    letter-spacing: 3px;
+  }
+
+  &__info {
+    margin: 20px 0;
+    letter-spacing: 1px;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: $color-platinum;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
 }
