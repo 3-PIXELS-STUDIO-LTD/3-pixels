@@ -4,9 +4,10 @@
   "description": "3-pixels.com website",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_ENV=development node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js",
+    "deploy:gae": "gcloud --project pixels-studio-264017 app deploy app.yaml --version main --verbosity=debug"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   "homepage": "https://github.com/3-PIXELS-STUDIO-LTD/3-pixels#readme",
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
     "next": "^9.1.6",
     "node-sass": "^4.13.0",
     "react": "^16.12.0",
